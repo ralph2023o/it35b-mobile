@@ -1,16 +1,6 @@
-import {
-  IonButton,
-  IonButtons,
-  IonContent,
-  IonHeader,
-  IonMenuButton,
-  IonPage,
-  IonRouterOutlet,
-  IonTitle,
-  IonToolbar,
-} from "@ionic/react";
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-const About: React.FC = () => {
+const Template: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -18,14 +8,15 @@ const About: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>About</IonTitle>
+          <IonTitle>KADON</IonTitle>
         </IonToolbar>
       </IonHeader>
 
-      <IonContent className="ion-padding">
-        <h1>Ionic kini</h1>
+      <IonContent fullscreen>
+        <h1>ABOUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</h1>
       </IonContent>
     </IonPage>
   );
 };
-export default About;
+
+export default Template;

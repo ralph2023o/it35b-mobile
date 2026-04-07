@@ -19,13 +19,13 @@ const Home: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton></IonMenuButton>
           </IonButtons>
-          <IonTitle>HOMEEEEEEEEEEEEEEEE</IonTitle>
+          <IonTitle>HOME</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">KADONNNN</IonTitle>
+            <IonTitle size="large">HOME</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
