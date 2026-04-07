@@ -1,29 +1,36 @@
-import { IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, useIonRouter } from "@ionic/react";
+import {
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonMenuButton,
+  IonPage,
+  IonRouterOutlet,
+  IonTitle,
+  useIonRouter,
+} from "@ionic/react";
+import { use } from "react";
 
-const login : React.FC = () => {
-    const navigation = useIonRouter();
+const Login: React.FC = () => {
+  const navigation = useIonRouter();
 
-    const dologin = () => {
-        navigation.push("/app" , "forward" , "replace");
-    }
-
-    return (
-         <IonPage>
-            <IonHeader>
-              <IonToolbar>
-                <IonButtons slot="start">
-                  <IonMenuButton />
-                </IonButtons>
-                <IonTitle>Template</IonTitle>
-              </IonToolbar>
-            </IonHeader>
-      
-            <IonContent fullscreen>
-                <IonButton expand ="full" onClick={() => dologin()} slot="start">
-                    Login
-                </IonButton>
-            </IonContent>
-          </IonPage>
-    );
-}
-export default login
+  const doLogin = () => {
+    navigation.push("/app", "forward", "replace");
+  };
+  return (
+    <IonPage>
+      <IonHeader>
+        <IonRouterOutlet>
+          <IonButton slot="start">
+            <IonMenuButton></IonMenuButton>
+          </IonButton>
+        </IonRouterOutlet>
+      </IonHeader>
+      <IonContent fullscreen>
+        <IonButton expand="full" color="primary" onClick={() => doLogin()}>
+          Login
+        </IonButton>
+      </IonContent>
+    </IonPage>
+  );
+};
+export default Login;
